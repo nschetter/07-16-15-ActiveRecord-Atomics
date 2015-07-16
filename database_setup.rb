@@ -27,4 +27,7 @@ unless ActiveRecord::Base.connection.table_exists?(:albums_photos)
     table.integer :photo_id
     table.integer :album_id
   end
+  
+  add_index :albums_photographs, :album_id
+  add_index :albums_photographs, :photograph_id
 end
