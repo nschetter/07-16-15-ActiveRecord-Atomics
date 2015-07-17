@@ -1,0 +1,9 @@
+<h1>Photographer List</h1>
+
+<ul>
+  <% @photographer.each do |x| %>
+    <li><%= "#{x.id} - #{x.name}" %></li>
+  <% end %>
+</ul>
+
+<p><a href="/home">Go to home page</a></p>

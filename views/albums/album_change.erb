@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Albums</title>
+</head>
+<body>
+  <h2>Update Album</h2>
+
+  <form action="/album_update/save">
+    <input type="hidden" name="id" value="<%= @album.id %>">
+    <p>Title:<input type="text" name="title" value="<%= @album.title %>"></p>
+    <p><input type="submit"></p>
+    <form>
+</body>
+</html>

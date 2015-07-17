@@ -1,0 +1,13 @@
+<h3>Delete Photographer</h3>
+
+  <p><h4>Choose an photographer to delete:</h4></p>
+  
+  <form action="/photographer_deleter">
+  
+    <% Photographer.all.each do |photographer| %>
+        <input type="radio" name="id" value="<%= photographer.id %>">
+        <%= photographer.name%>
+    <% end %>
+    <p><input type="submit"></p>
+    
+<p><a href = "/home">Return To Main Menu</a><p>

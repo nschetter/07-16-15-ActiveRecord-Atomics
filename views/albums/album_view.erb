@@ -1,0 +1,9 @@
+<h1>Album List</h1>
+
+<ul>
+  <% @album.each do |alb| %>
+    <li><%= "#{alb.id} - #{alb.title}" %></li>
+  <% end %>
+</ul>
+
+<p><a href="/home">Go to home page</a></p>

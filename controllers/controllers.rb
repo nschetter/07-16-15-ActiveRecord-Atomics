@@ -52,4 +52,3 @@ get "/controller_view" do
   @controller = Controller.all
   erb :"/controllers/controller_view"
 end
-Controller

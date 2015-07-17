@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photographers</title>
+</head>
+<body>
+  <h2>Select the photographer to change</h2> 
+  <form action="/photographers/photographer_change">
+
+    <% Album.all.each do |photographer| %>
+        <input type="radio" name="id" value="<%= photographer.id %>">
+        <%= photographer.name%>
+    <% end %>
+    <p><input type="submit"></p>
+  </form> 
+<body>
+</html>

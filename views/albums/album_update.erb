@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Albums</title>
+</head>
+<body>
+  <h2>Select the album to change</h2> 
+  <form action="/albums/album_change">
+
+    <% Album.all.each do |album| %>
+        <input type="radio" name="id" value="<%= album.id %>">
+        <%= album.title%>
+    <% end %>
+    <p><input type="submit"></p>
+  </form> 
+<body>
+</html>

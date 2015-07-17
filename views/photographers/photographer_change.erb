@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photographers</title>
+</head>
+<body>
+  <h2>Update Photographer Name</h2>
+
+  <form action="/photographer_update/save">
+    <input type="hidden" name="id" value="<%= @photographer.id %>">
+    <p>Name:<input type="text" name="name" value="<%= @photographer.name %>"></p>
+    <p><input type="submit"></p>
+    <form>
+</body>
+</html>
